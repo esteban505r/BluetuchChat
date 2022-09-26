@@ -197,7 +197,7 @@ class MainActivity : ComponentActivity() {
         }
 
         Column(modifier = modifier) {
-            HorizontalPager(count = 2, state = pagerState) { page ->
+            HorizontalPager(count = 2, state = pagerState, userScrollEnabled = false) { page ->
                 when (page) {
                     0 -> ConnectDevicesPage(
                         this@MainActivity,
